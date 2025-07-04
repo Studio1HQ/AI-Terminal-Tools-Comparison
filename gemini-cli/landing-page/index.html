@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSync - Seamless File Synchronization</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full z-10 py-4 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <svg class="h-8 w-8 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                </svg>
+                <h1 class="text-2xl font-bold text-gray-800">CloudSync</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-600 hover:text-blue-500 transition duration-300">Features</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-blue-500 transition duration-300">Testimonials</a>
+                <a href="#pricing" class="text-gray-600 hover:text-blue-500 transition duration-300">Pricing</a>
+            </nav>
+            <button class="hidden md:inline-block bg-blue-500 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
+                Get Started
+            </button>
+            <button class="md:hidden inline-block p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" id="mobile-menu-button">
+                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2">
+            <a href="#features" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Features</a>
+            <a href="#testimonials" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Testimonials</a>
+            <a href="#pricing" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Pricing</a>
+             <a href="#" class="block w-full text-left bg-blue-500 text-white font-semibold mt-2 px-4 py-3 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
+                Get Started
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-28 gradient-bg">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">
+                    Your Files, <span class="hero-gradient-text">Perfectly in Sync.</span>
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-600">
+                    CloudSync offers effortless file synchronization across all your devices. Secure, fast, and reliable – access your files anywhere, anytime.
+                </p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#pricing" class="bg-blue-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-600 transform hover:scale-105 transition duration-300">
+                        Start Your Free Trial
+                    </a>
+                    <a href="#features" class="bg-white text-gray-800 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transform hover:scale-105 transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <img src="https://placehold.co/1200x600/E2E8F0/4A5568?text=CloudSync+Dashboard" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/1200x600/E2E8F0/4A5568?text=Image+Not+Available';"
+                     alt="CloudSync Dashboard" class="rounded-xl shadow-2xl">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Why Choose CloudSync?</h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-600">Everything you need to keep your digital life in sync.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Feature 1 -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-500 mx-auto mb-4">
+                            <i data-feather="zap"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Blazing Fast Sync</h3>
+                        <p class="text-gray-600">Our smart sync technology updates your files in real-time across all your devices instantly.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-500 mx-auto mb-4">
+                            <i data-feather="shield"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Bank-Grade Security</h3>
+                        <p class="text-gray-600">With end-to-end encryption, your files are secure and private. Only you can access them.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-500 mx-auto mb-4">
+                            <i data-feather="share-2"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Easy Collaboration</h3>
+                        <p class="text-gray-600">Share files and folders with colleagues or friends. Set permissions and collaborate seamlessly.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-500 mx-auto mb-4">
+                            <i data-feather="smartphone"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cross-Platform Access</h3>
+                        <p class="text-gray-600">Access your files from any device - Windows, macOS, Linux, iOS, and Android.</p>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-500 mx-auto mb-4">
+                            <i data-feather="clock"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">File Versioning</h3>
+                        <p class="text-gray-600">Easily restore previous versions of your files. We keep a 30-day history of all your changes.</p>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-500 mx-auto mb-4">
+                            <i data-feather="hard-drive"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Generous Storage</h3>
+                        <p class="text-gray-600">Start with a generous amount of free storage and upgrade as your needs grow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Loved by Teams Worldwide</h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-600">Don't just take our word for it. Here's what our customers are saying.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-600 mb-6">"CloudSync has revolutionized how our team collaborates. The real-time sync is incredibly fast and reliable. It's a must-have tool for any remote team."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/A0AEC0/FFFFFF?text=AV" alt="Avatar of Sarah L.">
+                            <div>
+                                <p class="font-semibold text-gray-900">Sarah L.</p>
+                                <p class="text-sm text-gray-500">CEO, Innovate Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-600 mb-6">"As a freelance designer, I need access to my files on multiple devices. CloudSync makes this seamless. The security features also give me peace of mind."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/A0AEC0/FFFFFF?text=AV" alt="Avatar of Mike P.">
+                            <div>
+                                <p class="font-semibold text-gray-900">Mike P.</p>
+                                <p class="text-sm text-gray-500">Freelance Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-600 mb-6">"We switched from a competitor and haven't looked back. The interface is intuitive, the performance is top-notch, and the customer support is excellent."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/A0AEC0/FFFFFF?text=AV" alt="Avatar of Jessica T.">
+                            <div>
+                                <p class="font-semibold text-gray-900">Jessica T.</p>
+                                <p class="text-sm text-gray-500">Project Manager, Tech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Simple, Transparent Pricing</h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-600">Choose the plan that's right for you.</p>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8">
+                    <!-- Personal Plan -->
+                    <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8 border border-gray-200 flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-900">Personal</h3>
+                        <p class="mt-2 text-gray-600">For individuals and small projects.</p>
+                        <div class="my-6">
+                            <span class="text-5xl font-extrabold text-gray-900">$10</span>
+                            <span class="text-lg text-gray-500">/ month</span>
+                        </div>
+                        <ul class="space-y-4 text-gray-600 flex-grow">
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>500 GB Storage</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>Unlimited Devices</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>Basic Collaboration</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>30-day Version History</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>Email Support</li>
+                        </ul>
+                        <a href="#" class="mt-8 block w-full bg-gray-100 text-gray-800 font-semibold py-3 px-6 rounded-lg text-center hover:bg-gray-200 transition duration-300">
+                            Choose Personal
+                        </a>
+                    </div>
+                    <!-- Business Plan -->
+                    <div class="w-full max-w-md bg-blue-500 text-white rounded-xl shadow-2xl p-8 transform lg:scale-105 flex flex-col">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-2xl font-semibold">Business</h3>
+                            <span class="bg-blue-400 text-white text-xs font-bold px-3 py-1 rounded-full">POPULAR</span>
+                        </div>
+                        <p class="mt-2 text-blue-100">For teams and growing businesses.</p>
+                        <div class="my-6">
+                            <span class="text-5xl font-extrabold">$25</span>
+                            <span class="text-lg text-blue-100">/ user / month</span>
+                        </div>
+                        <ul class="space-y-4 text-blue-100 flex-grow">
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 mr-2"></i>2 TB Storage per User</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 mr-2"></i>Unlimited Devices</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 mr-2"></i>Advanced Collaboration Tools</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 mr-2"></i>90-day Version History</li>
+                            <li class="flex items-center"><i data-feather="check" class="w-5 h-5 mr-2"></i>Priority Phone & Email Support</li>
+                        </ul>
+                        <a href="#" class="mt-8 block w-full bg-white text-blue-500 font-semibold py-3 px-6 rounded-lg text-center hover:bg-blue-100 transition duration-300">
+                            Choose Business
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div class="col-span-2 md:col-span-4 lg:col-span-1">
+                     <div class="flex items-center">
+                        <svg class="h-8 w-8 text-blue-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                        <h1 class="text-2xl font-bold">CloudSync</h1>
+                    </div>
+                    <p class="mt-4 text-gray-400">Effortless file synchronization for everyone.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-200 tracking-wider uppercase">Product</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition">Features</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Security</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-200 tracking-wider uppercase">Company</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-200 tracking-wider uppercase">Support</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">System Status</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 CloudSync, Inc. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="github"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
